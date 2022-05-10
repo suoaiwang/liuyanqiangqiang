@@ -1,21 +1,13 @@
-# v2ray-heroku
-
-> ~~貌似新建的app有些需要科学访问~~，如果需要，请使用cloudflare worker CDN 或者 cloudflare tunnel 套一层。
-
-> 切换到最新的 VLESS 协议。具体客户端配置请看 config 章节。
-
-> v2ray-heroku 是我为了体验 github action 的产物，也是我的主力 backup，我会日常维护它。加入或者修改一些我认为好的配置。但这一般会导致客户端配置需要些许修改。 不过具体配置都会体现在 [详细 VLESS websocket 客户端配置](#vless-websocket-客户端配置)
-
 > 有问题请开 issue 或者 discussions。
 
-首先查看别人的 [youtube 教程](https://www.youtube.com/watch?v=xHZyDsFYdvA)，了解怎么配置 v2ray-heroku。**本项目使用最新 VLESS 协议，请在客户端配置选择 VLESS**。  
-[详细 VLESS websocket 客户端配置](#vless-websocket-客户端配置) 。
+首先查看别人的 [youtube 教程](https://www.youtube.com/watch?v=xHZyDsFYdvA)，了解怎么配置。 
+
 
 如果你还想自动化你的 heroku，请查看下面的教程。
 
 本项目是包含，
 
-- 一键部署 V2ray 到 heroku。
+- 一键部署到 heroku。
 - 利用 Github action 实现 [重新部署](#重新部署)/[停止](#停止)/[启动](#启动)/[删除](#删除)。
 - 支持 heroku 的区域（us 和 eu）
 - **支持[多app和多账户](#使用-environments-实现-多账户多app-secrets-管理) [重新部署](#重新部署)/[停止](#停止)/[启动](#启动)/[删除](#删除)。**
@@ -54,7 +46,7 @@
 
 HEROKU_TUNNEL_TOKEN 是可选项，可以忽略. 详细说明，请查看章节 《建立-cloudflare-tunnel-（可选）》
 
-> 请务必生成新的 UUID。使用已有的 UUID 会使自己 V2ray 暴露在危险之下。
+> 请务必生成新的 UUID。使用已有的 UUID 
 
 
 PowerShell:
@@ -193,10 +185,3 @@ https://github.com/badafans/better-cloudflare-ip
     ]
 ```
 
-### v2rayN
-
-换成 [V2rayN](https://github.com/2dust/v2rayN)
-
-别人的配置教程参考，https://v2raytech.com/v2rayn-config-tutorial/.
-
-![v2rayN](/readme-data/V2rayN.jpg)
