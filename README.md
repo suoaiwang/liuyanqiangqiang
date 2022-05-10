@@ -1,4 +1,4 @@
-> 有问题请开 issue 或者 discussions。
+有问题请开 issue 或者 discussions。
 
 首先查看别人的 [youtube 教程](https://www.youtube.com/watch?v=xHZyDsFYdvA)，了解怎么配置。 
 
@@ -16,9 +16,6 @@
 - **利用 [cloudflare tunnel](https://www.cloudflare.com/products/tunnel/) 进行加速。**
 
 ```text
-项目Dockerfile是基于V2fly 官方镜像制作。仅仅增加生产配置文件的脚本。重新部署就可以更新到最新的v2ray。
-基于官方镜像，这也是v2fly 推荐的做法。
-```
 
 > 保持安全最简单的方式就是，保持软件更新。
 
